@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace _1_1_Multithreading
+﻿namespace Multithreading
 {
+    using System;
     using System.Threading.Tasks;
 
-    class Listing_1_8
+    public class Listing_1_8
     {
         public static void Run()
         {

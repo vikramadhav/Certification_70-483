@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-
-namespace _1_1_Multithreading
+﻿namespace Multithreading
 {
+    using System;
     using System.Threading;
 
-    internal class Listing_1_4
+    public class Listing_1_4
     {
         public static void ThreadMethod(object o)
         {

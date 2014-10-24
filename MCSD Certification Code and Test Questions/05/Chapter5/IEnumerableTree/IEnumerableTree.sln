@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEnumerableTree", "IEnumerableTree.csproj", "{1014EB9D-66CF-49EB-8C11-E199E86655FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1014EB9D-66CF-49EB-8C11-E199E86655FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1014EB9D-66CF-49EB-8C11-E199E86655FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1014EB9D-66CF-49EB-8C11-E199E86655FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1014EB9D-66CF-49EB-8C11-E199E86655FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

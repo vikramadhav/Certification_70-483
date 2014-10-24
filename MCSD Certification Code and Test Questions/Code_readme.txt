@@ -1,0 +1,3 @@
+This zip contains code from every chapter of the book with the exception of chapter 1, which has no code. Please also note that in some cases, certain examples or listings from the chapters are not included because the example is generated code, output, or something you would never enter yourself.
+This zip also contains sample test questions, both those from the book and additional new questions included only in this zip. Sample test questions are provided for all chapters with with the exception of chapter 1. 
+We hope you will find this content useful and informative.

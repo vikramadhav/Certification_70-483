@@ -1,0 +1,12 @@
+// create a variable of type bool called result and assign it an initial 
+// value of false
+
+bool result = false;
+
+// check a simple comparison and assign the value to variable result
+// in this case, we check if the literal 2 is equal to the literal 2
+// the result of this comparison is true and the variable result will
+// now contain the bool value true
+
+result = 2 == 2;
+Console.Writeline(result);  // will output the value true

@@ -45,6 +45,8 @@
     <Compile Include="Listing_1_2.cs" />
     <Compile Include="Listing_1_3.cs" />
     <Compile Include="Listing_1_4.cs" />
+    <Compile Include="Listing_1_5.cs" />
+    <Compile Include="Listing_1_6.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

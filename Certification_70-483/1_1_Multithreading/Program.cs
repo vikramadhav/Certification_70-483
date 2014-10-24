@@ -14,7 +14,8 @@ namespace _1_1_Multithreading
             //Listing_1_3.Run();
             //Listing_1_4.Run();
             //Listing_1_5.Run();
-            Listing_1_6.Run();
+            //Listing_1_6.Run();
+            Listing_1_7.Run();
         }
     }
 }

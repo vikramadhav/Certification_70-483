@@ -1,4 +1,4 @@
-﻿namespace Certification.Multithreading
+﻿namespace Certification.Chapter1.Multithreading.Tasks
 {
     using Certification.Common;
     using System;

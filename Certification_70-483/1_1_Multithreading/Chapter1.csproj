@@ -7,8 +7,8 @@
     <ProjectGuid>{6106E8F8-6EA0-4A2C-AFCA-825FC7DB9D0B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Certification.Multithreading</RootNamespace>
-    <AssemblyName>Certification.Multithreading</AssemblyName>
+    <RootNamespace>Certification.Chapter1</RootNamespace>
+    <AssemblyName>Certification.Chapter1</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -47,21 +47,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Listing_1_1.cs" />
-    <Compile Include="Listing_1_12.cs" />
-    <Compile Include="Listing_1_13.cs" />
-    <Compile Include="Listing_1_14.cs" />
-    <Compile Include="Listing_1_15.cs" />
-    <Compile Include="Listing_1_2.cs" />
-    <Compile Include="Listing_1_3.cs" />
-    <Compile Include="Listing_1_4.cs" />
-    <Compile Include="Listing_1_5.cs" />
-    <Compile Include="Listing_1_6.cs" />
-    <Compile Include="Listing_1_7.cs" />
-    <Compile Include="Listing_1_8.cs" />
-    <Compile Include="Listing_1_9.cs" />
-    <Compile Include="Parallel\Listing_1_16.cs" />
-    <Compile Include="Parallel\Listing_1_17.cs" />
+    <Compile Include="Multithreading\Threads\Listing_1_1.cs" />
+    <Compile Include="Multithreading\Tasks\Listing_1_12.cs" />
+    <Compile Include="Multithreading\Tasks\Listing_1_13.cs" />
+    <Compile Include="Multithreading\Tasks\Listing_1_14.cs" />
+    <Compile Include="Multithreading\Tasks\Listing_1_15.cs" />
+    <Compile Include="Multithreading\Threads\Listing_1_2.cs" />
+    <Compile Include="Multithreading\Threads\Listing_1_3.cs" />
+    <Compile Include="Multithreading\Threads\Listing_1_4.cs" />
+    <Compile Include="Multithreading\Threads\Listing_1_5.cs" />
+    <Compile Include="Multithreading\Threads\Listing_1_6.cs" />
+    <Compile Include="Multithreading\Threads\Listing_1_7.cs" />
+    <Compile Include="Multithreading\Tasks\Listing_1_8.cs" />
+    <Compile Include="Multithreading\Tasks\Listing_1_9.cs" />
+    <Compile Include="Multithreading\Parallel\Listing_1_16.cs" />
+    <Compile Include="Multithreading\Parallel\Listing_1_17.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -73,9 +73,7 @@
       <Name>Common</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Multithreading\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

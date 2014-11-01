@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Certification.Multithreading.Parallel
+namespace Certification.Chapter1.Multithreading.Parallel
 {
     public class Listing_1_16 : IRunnable
     {

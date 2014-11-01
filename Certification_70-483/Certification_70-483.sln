@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1_1_Multithreading", "1_1_Multithreading\1_1_Multithreading.csproj", "{6106E8F8-6EA0-4A2C-AFCA-825FC7DB9D0B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter1", "1_1_Multithreading\Chapter1.csproj", "{6106E8F8-6EA0-4A2C-AFCA-825FC7DB9D0B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Launcher", "Launcher\Launcher.csproj", "{473BE9B7-FEBE-439E-B709-65E7E89564D6}"
 EndProject

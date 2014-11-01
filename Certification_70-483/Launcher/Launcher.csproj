@@ -52,9 +52,9 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\1_1_Multithreading\1_1_Multithreading.csproj">
+    <ProjectReference Include="..\1_1_Multithreading\Chapter1.csproj">
       <Project>{6106e8f8-6ea0-4a2c-afca-825fc7db9d0b}</Project>
-      <Name>1_1_Multithreading</Name>
+      <Name>Chapter1</Name>
     </ProjectReference>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{1b34c5eb-728b-4ae4-aabe-b11192255923}</Project>

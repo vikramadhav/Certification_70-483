@@ -1,11 +1,12 @@
-﻿namespace Multithreading
+﻿namespace Certification.Multithreading
 {
+    using Certification.Common;
     using System;
     using System.Threading;
 
-    public class Listing_1_4
+    public class Listing_1_4 : IRunnable
     {
-        public static void ThreadMethod(object o)
+        public void ThreadMethod(object o)
         {
             for (int i = 0; i < (int)o; i++)
             {
@@ -14,7 +15,7 @@
             }
         }
 
-        public static void Run()
+        public void Run()
         {
             bool stopped = false;
             Thread t = new Thread(

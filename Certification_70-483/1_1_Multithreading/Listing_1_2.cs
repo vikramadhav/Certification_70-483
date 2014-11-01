@@ -1,11 +1,12 @@
-﻿namespace Multithreading
+﻿namespace Certification.Multithreading
 {
+    using Certification.Common;
     using System;
     using System.Threading;
 
-    public class Listing_1_2
+    public class Listing_1_2 : IRunnable
     {
-        public static void ThreadMethod()
+        public void ThreadMethod()
         {
             for (int i = 0; i < 10; i++)
             {
@@ -13,7 +14,7 @@
                 Thread.Sleep(1000);
             }
         }
-        public static void Run()
+        public void Run()
         {
             Thread t = new Thread(new ThreadStart(ThreadMethod));
             //t.IsBackground = true;

@@ -1,11 +1,12 @@
-﻿namespace Multithreading
+﻿namespace Certification.Multithreading
 {
+    using Certification.Common;
     using System;
     using System.Threading;
 
-    public class Listing_1_7
+    public class Listing_1_7 : IRunnable
     {
-        public static void Run()
+        public void Run()
         {
             ThreadPool.QueueUserWorkItem((s) =>
             {

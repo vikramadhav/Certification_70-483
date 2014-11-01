@@ -1,17 +1,18 @@
-﻿namespace Multithreading
+﻿namespace Certification.Multithreading
 {
+    using Certification.Common;
     using System;
     using System.Threading;
 
-    public class Listing_1_6
+    public class Listing_1_6 : IRunnable
     {
-        public static ThreadLocal<int> _field =
+        public ThreadLocal<int> _field =
 new ThreadLocal<int>(() =>
 {
     return Thread.CurrentThread.ManagedThreadId;
 });
 
-        public static void Run()
+        public void Run()
         {
             new Thread(() =>
             {

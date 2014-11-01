@@ -7,8 +7,8 @@
     <ProjectGuid>{473BE9B7-FEBE-439E-B709-65E7E89564D6}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Launcher</RootNamespace>
-    <AssemblyName>Launcher</AssemblyName>
+    <RootNamespace>Certification.Launcher</RootNamespace>
+    <AssemblyName>Certification.Launcher</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -55,6 +55,10 @@
     <ProjectReference Include="..\1_1_Multithreading\1_1_Multithreading.csproj">
       <Project>{6106e8f8-6ea0-4a2c-afca-825fc7db9d0b}</Project>
       <Name>1_1_Multithreading</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{1b34c5eb-728b-4ae4-aabe-b11192255923}</Project>
+      <Name>Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,16 +1,16 @@
-﻿namespace Multithreading
+﻿namespace Certification.Multithreading
 {
+    using Certification.Common;
     using System;
     using System.Threading.Tasks;
 
-    public class Listing_1_9
+    public class Listing_1_9 : IRunnable
     {
-        public static void Run()
+        public void Run()
         {
             Task<int> t = Task.Run(
                 () =>
                 {
-                    throw new Exception();
                     return 42;
                 });
 

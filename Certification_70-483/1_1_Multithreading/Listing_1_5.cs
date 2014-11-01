@@ -1,14 +1,15 @@
-﻿namespace Multithreading
+﻿namespace Certification.Multithreading
 {
+    using Certification.Common;
     using System;
     using System.Threading;
 
-    public class Listing_1_5
+    public class Listing_1_5 : IRunnable
     {
         [ThreadStatic]
         public static int _field;
 
-        public static void Run()
+        public void Run()
         {
             new Thread(() =>
             {

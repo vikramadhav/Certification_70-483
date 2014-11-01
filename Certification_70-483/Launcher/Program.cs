@@ -31,10 +31,10 @@ namespace Certification.Launcher
                 
                 if (type == null)
                 {
-                    if (number == "0")
+                    if (number == "0" || number == String.Empty)
                     {
                         Console.WriteLine("Bye bye pov' type");
-                        Thread.Sleep(5000);
+                        Thread.Sleep(500);
                         return;
                     }
 

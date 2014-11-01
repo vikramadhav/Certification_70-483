@@ -48,6 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Listing_1_1.cs" />
+    <Compile Include="Listing_1_12.cs" />
+    <Compile Include="Listing_1_13.cs" />
+    <Compile Include="Listing_1_14.cs" />
+    <Compile Include="Listing_1_15.cs" />
     <Compile Include="Listing_1_2.cs" />
     <Compile Include="Listing_1_3.cs" />
     <Compile Include="Listing_1_4.cs" />
@@ -56,6 +60,8 @@
     <Compile Include="Listing_1_7.cs" />
     <Compile Include="Listing_1_8.cs" />
     <Compile Include="Listing_1_9.cs" />
+    <Compile Include="Parallel\Listing_1_16.cs" />
+    <Compile Include="Parallel\Listing_1_17.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -66,6 +72,9 @@
       <Project>{1b34c5eb-728b-4ae4-aabe-b11192255923}</Project>
       <Name>Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Multithreading\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

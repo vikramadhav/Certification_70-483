@@ -40,6 +40,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +48,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Multithreading\AsyncAwait\Listing_1_18.cs" />
+    <Compile Include="Multithreading\Plinq\Listing_1_22.cs" />
+    <Compile Include="Multithreading\Plinq\Listing_1_23.cs" />
+    <Compile Include="Multithreading\Plinq\Listing_1_24.cs" />
+    <Compile Include="Multithreading\Plinq\Listing_1_25.cs" />
+    <Compile Include="Multithreading\Plinq\Listing_1_26.cs" />
+    <Compile Include="Multithreading\Plinq\Listing_1_27.cs" />
     <Compile Include="Multithreading\Threads\Listing_1_1.cs" />
     <Compile Include="Multithreading\Tasks\Listing_1_12.cs" />
     <Compile Include="Multithreading\Tasks\Listing_1_13.cs" />

@@ -77,6 +77,16 @@
     <Compile Include="Objective1_1\Tasks\Listing_1_9.cs" />
     <Compile Include="Objective1_1\Parallel\Listing_1_16.cs" />
     <Compile Include="Objective1_1\Parallel\Listing_1_17.cs" />
+    <Compile Include="Objective1_2\CancelTasks\Listing_1_42.cs" />
+    <Compile Include="Objective1_2\CancelTasks\Listing_1_43.cs" />
+    <Compile Include="Objective1_2\CancelTasks\Listing_1_44.cs" />
+    <Compile Include="Objective1_2\CancelTasks\Listing_1_45.cs" />
+    <Compile Include="Objective1_2\Synchronization\Listing_1_35.cs" />
+    <Compile Include="Objective1_2\Synchronization\Listing_1_36.cs" />
+    <Compile Include="Objective1_2\Synchronization\Listing_1_37.cs" />
+    <Compile Include="Objective1_2\Synchronization\Listing_1_39.cs" />
+    <Compile Include="Objective1_2\Synchronization\Listing_1_40.cs" />
+    <Compile Include="Objective1_2\Synchronization\Listing_1_41.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

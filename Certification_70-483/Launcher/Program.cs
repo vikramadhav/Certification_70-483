@@ -17,7 +17,7 @@ namespace Certification.Launcher
 
         static void Main(string[] args)
         {
-            Assembly multithreadingAssembly = Assembly.GetAssembly(typeof(Certification.Chapter1.Multithreading.Threads.Listing_1_1));
+            Assembly multithreadingAssembly = Assembly.GetAssembly(typeof(Certification.Chapter1.Objective1_1.Threads.Listing_1_1));
             var runnableTypes = multithreadingAssembly.GetTypes().Where(type => type != typeof(IRunnable) && typeof(IRunnable).IsAssignableFrom(type));
 
             while (true)

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("1_1_Certification.Chapter1.Multithreading")]
+[assembly: AssemblyTitle("1_1_Certification.Chapter1.Objective1_1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("eurofins")]
-[assembly: AssemblyProduct("1_1_Certification.Chapter1.Multithreading")]
+[assembly: AssemblyProduct("1_1_Certification.Chapter1.Objective1_1")]
 [assembly: AssemblyCopyright("Copyright © eurofins 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

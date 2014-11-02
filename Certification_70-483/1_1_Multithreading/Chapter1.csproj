@@ -48,28 +48,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Multithreading\AsyncAwait\Listing_1_18.cs" />
-    <Compile Include="Multithreading\Plinq\Listing_1_22.cs" />
-    <Compile Include="Multithreading\Plinq\Listing_1_23.cs" />
-    <Compile Include="Multithreading\Plinq\Listing_1_24.cs" />
-    <Compile Include="Multithreading\Plinq\Listing_1_25.cs" />
-    <Compile Include="Multithreading\Plinq\Listing_1_26.cs" />
-    <Compile Include="Multithreading\Plinq\Listing_1_27.cs" />
-    <Compile Include="Multithreading\Threads\Listing_1_1.cs" />
-    <Compile Include="Multithreading\Tasks\Listing_1_12.cs" />
-    <Compile Include="Multithreading\Tasks\Listing_1_13.cs" />
-    <Compile Include="Multithreading\Tasks\Listing_1_14.cs" />
-    <Compile Include="Multithreading\Tasks\Listing_1_15.cs" />
-    <Compile Include="Multithreading\Threads\Listing_1_2.cs" />
-    <Compile Include="Multithreading\Threads\Listing_1_3.cs" />
-    <Compile Include="Multithreading\Threads\Listing_1_4.cs" />
-    <Compile Include="Multithreading\Threads\Listing_1_5.cs" />
-    <Compile Include="Multithreading\Threads\Listing_1_6.cs" />
-    <Compile Include="Multithreading\Threads\Listing_1_7.cs" />
-    <Compile Include="Multithreading\Tasks\Listing_1_8.cs" />
-    <Compile Include="Multithreading\Tasks\Listing_1_9.cs" />
-    <Compile Include="Multithreading\Parallel\Listing_1_16.cs" />
-    <Compile Include="Multithreading\Parallel\Listing_1_17.cs" />
+    <Compile Include="Objective1_1\AsyncAwait\Listing_1_18.cs" />
+    <Compile Include="Objective1_1\ConcurrentCollection\Listing_1_28.cs" />
+    <Compile Include="Objective1_1\ConcurrentCollection\Listing_1_29.cs" />
+    <Compile Include="Objective1_1\ConcurrentCollection\Listing_1_30.cs" />
+    <Compile Include="Objective1_1\ConcurrentCollection\Listing_1_31.cs" />
+    <Compile Include="Objective1_1\ConcurrentCollection\Listing_1_32.cs" />
+    <Compile Include="Objective1_1\ConcurrentCollection\Listing_1_33.cs" />
+    <Compile Include="Objective1_1\ConcurrentCollection\Listing_1_34.cs" />
+    <Compile Include="Objective1_1\Plinq\Listing_1_22.cs" />
+    <Compile Include="Objective1_1\Plinq\Listing_1_23.cs" />
+    <Compile Include="Objective1_1\Plinq\Listing_1_24.cs" />
+    <Compile Include="Objective1_1\Plinq\Listing_1_25.cs" />
+    <Compile Include="Objective1_1\Plinq\Listing_1_26.cs" />
+    <Compile Include="Objective1_1\Plinq\Listing_1_27.cs" />
+    <Compile Include="Objective1_1\Threads\Listing_1_1.cs" />
+    <Compile Include="Objective1_1\Tasks\Listing_1_12.cs" />
+    <Compile Include="Objective1_1\Tasks\Listing_1_13.cs" />
+    <Compile Include="Objective1_1\Tasks\Listing_1_14.cs" />
+    <Compile Include="Objective1_1\Tasks\Listing_1_15.cs" />
+    <Compile Include="Objective1_1\Threads\Listing_1_2.cs" />
+    <Compile Include="Objective1_1\Threads\Listing_1_3.cs" />
+    <Compile Include="Objective1_1\Threads\Listing_1_4.cs" />
+    <Compile Include="Objective1_1\Threads\Listing_1_5.cs" />
+    <Compile Include="Objective1_1\Threads\Listing_1_6.cs" />
+    <Compile Include="Objective1_1\Threads\Listing_1_7.cs" />
+    <Compile Include="Objective1_1\Tasks\Listing_1_8.cs" />
+    <Compile Include="Objective1_1\Tasks\Listing_1_9.cs" />
+    <Compile Include="Objective1_1\Parallel\Listing_1_16.cs" />
+    <Compile Include="Objective1_1\Parallel\Listing_1_17.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

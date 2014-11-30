@@ -87,6 +87,18 @@
     <Compile Include="Objective1_2\Synchronization\Listing_1_39.cs" />
     <Compile Include="Objective1_2\Synchronization\Listing_1_40.cs" />
     <Compile Include="Objective1_2\Synchronization\Listing_1_41.cs" />
+    <Compile Include="Objective1_4\Delegates\Listing_1_75.cs" />
+    <Compile Include="Objective1_4\Delegates\Listing_1_76.cs" />
+    <Compile Include="Objective1_4\Delegates\Listing_1_77.cs" />
+    <Compile Include="Objective1_4\Delegates\Listing_1_78.cs" />
+    <Compile Include="Objective1_4\Delegates\Listing_1_79.cs" />
+    <Compile Include="Objective1_4\Delegates\Listing_1_81.cs" />
+    <Compile Include="Objective1_4\Delegates\Listing_1_82.cs" />
+    <Compile Include="Objective1_4\Delegates\Listing_1_83.cs" />
+    <Compile Include="Objective1_4\Delegates\Listing_1_84.cs" />
+    <Compile Include="Objective1_4\Delegates\Listing_1_85.cs" />
+    <Compile Include="Objective1_4\Delegates\Listing_1_86.cs" />
+    <Compile Include="Objective1_4\Delegates\Listing_1_87.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

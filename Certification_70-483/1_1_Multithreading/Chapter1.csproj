@@ -99,6 +99,9 @@
     <Compile Include="Objective1_4\Delegates\Listing_1_85.cs" />
     <Compile Include="Objective1_4\Delegates\Listing_1_86.cs" />
     <Compile Include="Objective1_4\Delegates\Listing_1_87.cs" />
+    <Compile Include="Objective1_5\Listing_1_92.cs" />
+    <Compile Include="Objective1_5\Listing_1_93.cs" />
+    <Compile Include="Objective1_5\Listing_1_94.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

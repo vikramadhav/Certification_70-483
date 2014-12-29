@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace Certification.Chapter1.Objective1_2.Synchronization
 {
+    using System.Security.Cryptography.X509Certificates;
+
     public class Listing_1_39 : IRunnable
     {
         private static int _flag = 0;

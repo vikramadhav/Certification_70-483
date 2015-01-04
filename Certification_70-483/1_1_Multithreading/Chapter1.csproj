@@ -102,6 +102,9 @@
     <Compile Include="Objective1_5\Listing_1_93.cs" />
     <Compile Include="Objective1_5\Listing_1_92.cs" />
     <Compile Include="Objective1_5\Listing_1_97.cs" />
+    <Compile Include="Objective1_5\Listing_1_92.cs" />
+    <Compile Include="Objective1_5\Listing_1_93.cs" />
+    <Compile Include="Objective1_5\Listing_1_94.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

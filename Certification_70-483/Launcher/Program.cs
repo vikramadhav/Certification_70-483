@@ -18,7 +18,13 @@ namespace Certification.Launcher
         static void Main(string[] args)
         {
             Assembly multithreadingAssembly = Assembly.GetAssembly(typeof(Certification.Chapter1.Objective1_1.Threads.Listing_1_1));
-            var runnableTypes = multithreadingAssembly.GetTypes().Where(type => type != typeof(IRunnable) && typeof(IRunnable).IsAssignableFrom(type));
+            Assembly chapter2Assembly = Assembly.GetAssembly(typeof(Certification.Chapter2.Objective2_1.Listing_2_1));
+            var runnableTypes =
+                multithreadingAssembly.GetTypes()
+                    .Where(type => type != typeof(IRunnable) && typeof(IRunnable).IsAssignableFrom(type))
+                    .Union(
+                        chapter2Assembly.GetTypes()
+                            .Where(type => type != typeof(IRunnable) && typeof(IRunnable).IsAssignableFrom(type)));
 
             while (true)
             {

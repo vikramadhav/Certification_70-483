@@ -1,5 +1,4 @@
-﻿using Certification.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,31 +6,31 @@ using System.Threading.Tasks;
 
 namespace Certification.Chapter1.Objective1_5
 {
+    using System.Threading;
+
+    using Certification.Common;
+
     public class Listing_1_93 : IRunnable
     {
         public void Run()
         {
             try
             {
-                int i = ReadAndParse();
-                Console.WriteLine("Parsed: {0}", i);
-            }
-            catch (FormatException e)
-            {
-                Console.WriteLine("Message: {0}", e.Message);
-                Console.WriteLine("StackTrace: {0}", e.StackTrace);
-                Console.WriteLine("HelpLink: {0}", e.HelpLink);
-                Console.WriteLine("InnerException: {0}", e.InnerException);
-                Console.WriteLine("TargetSite: {0}", e.TargetSite);
-                Console.WriteLine("Source: {0}", e.Source);
-            }
-        }
+                Thread t = new Thread(
+                    () =>
+                    {
+                        Thread.Sleep(1000);
+                        throw new Exception("Pas content");
+                    });
 
-        private static int ReadAndParse()
-        {
-            string s = Console.ReadLine();
-            int i = int.Parse(s);
-            return i;
+                t.Start();
+                t.Join();
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Exception handled.");
+            }
+            Console.WriteLine("Program ended.");
         }
     }
 }

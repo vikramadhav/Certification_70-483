@@ -1,5 +1,4 @@
-﻿using Certification.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Certification.Chapter1.Objective1_5
 {
+    using Certification.Common;
+
     public class Listing_1_92 : IRunnable
     {
         public void Run()

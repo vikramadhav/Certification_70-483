@@ -44,6 +44,8 @@
   <ItemGroup>
     <Compile Include="Objective2_1\Listing_2_1.cs" />
     <Compile Include="Objective2_1\Listing_2_2.cs" />
+    <Compile Include="Objective2_2\Listing_2_29.cs" />
+    <Compile Include="Objective2_2\Listing_2_30.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

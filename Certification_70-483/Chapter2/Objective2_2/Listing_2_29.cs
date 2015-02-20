@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace Certification.Chapter2.Objective2_2
 {
+    /// <summary>
+    /// SynamicObject
+    /// </summary>
     public class Listing_2_29 : IRunnable
     {
         public void Run()

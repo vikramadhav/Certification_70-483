@@ -48,6 +48,13 @@ namespace Certification.Launcher
                 else
                 {
                     var runnable = (IRunnable)(type.GetConstructor(new Type[0]).Invoke(new object[0]));
+                    var listingAttribute = (ListingAttribute)Attribute.GetCustomAttribute(type, typeof(ListingAttribute));
+
+                    if (listingAttribute != null)
+                    {
+                        Console.WriteLine("Running listing \"" + listingAttribute.Description + "\"");
+                        Console.WriteLine();
+                    }
                     runnable.Run();
                     Console.WriteLine("_______________________________________________________");
                 }

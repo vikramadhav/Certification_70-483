@@ -10,58 +10,110 @@ namespace Certification.Launcher
 
     using System.Reflection;
     using Certification.Common;
+    using System.Text.RegularExpressions;
 
     class Program
     {
         const string typePrefix = "Listing_";
+        const string listingRegExp = "^[0-9]+.[0-9]+$";
+        const string chapterRegExp = "^[0-9]+$";
 
         static void Main(string[] args)
         {
-            var listingAssemblies = new List<Assembly>()
+            var assemblyDictionary = new Dictionary<int, Assembly>()
             {
-                Assembly.GetAssembly(typeof(Certification.Chapter1.Objective1_1.Threads.Listing_1_1)),
-                Assembly.GetAssembly(typeof(Certification.Chapter2.Objective2_1.Listing_2_1)),
-                Assembly.GetAssembly(typeof(Chapter3.Objective1.Listing_3_6))
+                { 1, Assembly.GetAssembly(typeof(Certification.Chapter1.Objective1_1.Threads.Listing_1_1)) },
+                { 2 , Assembly.GetAssembly(typeof(Certification.Chapter2.Objective2_1.Listing_2_1)) },
+                { 3, Assembly.GetAssembly(typeof(Chapter3.Objective1.Listing_3_6)) }
             };
 
-            var runnableTypes = listingAssemblies.SelectMany(
-                a => a.GetTypes()
-                      .Where(type => type != typeof(IRunnable) && typeof(IRunnable).IsAssignableFrom(type))
-                );
+            var typeDictionary = new Dictionary<int, IEnumerable<Type>>();
+            foreach (var kvp in assemblyDictionary)
+            {
+                typeDictionary.Add(kvp.Key, kvp.Value.GetTypes()
+                      .Where(type => type != typeof(IRunnable) && typeof(IRunnable).IsAssignableFrom(type)));
+            }
 
             while (true)
             {
                 Console.WriteLine("Enter the listing number:");
-                var number = Console.ReadLine();
-                number = number.Replace('.', '_');
+                var input = Console.ReadLine();
 
-                var type = runnableTypes.FirstOrDefault(t => t.Name == typePrefix + number);
-                
-                if (type == null)
+                bool isListing = Regex.IsMatch(input, listingRegExp);
+                bool isChapter = Regex.IsMatch(input, chapterRegExp);
+
+                if (isChapter)
                 {
-                    if (number == "0" || number == String.Empty)
-                    {
-                        Console.WriteLine("Bye bye pov' type");
-                        Thread.Sleep(500);
-                        return;
-                    }
+                    IEnumerable<Type> listings;
+                    var chapterNumber = int.Parse(input);
 
-                    Console.WriteLine("Unknown listing {0}", typePrefix + number);
+                    if (typeDictionary.TryGetValue(chapterNumber, out listings))
+                    {
+                        Console.WriteLine("Available listing are:");
+                        var listingNames = listings.Select(l => l.Name.Replace(typePrefix, string.Empty).Replace("_", "."));
+
+                        foreach (var listing in listings.OrderBy(l => GetListingNumber(l)))
+                        {
+                            var displayName = listing.Name.Replace(typePrefix, string.Empty).Replace("_", ".");
+                            var listingAttribute = (ListingAttribute)Attribute.GetCustomAttribute(listing, typeof(ListingAttribute));
+
+                            if (listingAttribute != null)
+                            {
+                                displayName += " - " + listingAttribute.Description;
+                            }
+
+                            Console.WriteLine(displayName);
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Chapter " + input + " is unknown.");
+                    }
                 }
-                else
+                else if (isListing)
                 {
-                    var runnable = (IRunnable)(type.GetConstructor(new Type[0]).Invoke(new object[0]));
-                    var listingAttribute = (ListingAttribute)Attribute.GetCustomAttribute(type, typeof(ListingAttribute));
+                    input = input.Replace('.', '_');
 
-                    if (listingAttribute != null)
+                    var type = typeDictionary.SelectMany(kvp => kvp.Value).FirstOrDefault(t => t.Name == typePrefix + input);
+
+                    if (type == null)
                     {
-                        Console.WriteLine("Running listing \"" + listingAttribute.Description + "\"");
-                        Console.WriteLine();
+                        Console.WriteLine("Unknown listing {0}", typePrefix + input);
                     }
-                    runnable.Run();
-                    Console.WriteLine("_______________________________________________________");
+                    else
+                    {
+                        var runnable = (IRunnable)(type.GetConstructor(new Type[0]).Invoke(new object[0]));
+                        var listingAttribute = (ListingAttribute)Attribute.GetCustomAttribute(type, typeof(ListingAttribute));
+
+                        if (listingAttribute != null)
+                        {
+                            Console.WriteLine("Running listing \"" + listingAttribute.Description + "\"");
+                            Console.WriteLine();
+                        }
+                        runnable.Run();
+                        Console.WriteLine("_______________________________________________________");
+                    }
+                }
+                else if (input == "0" || input == String.Empty)
+                {
+                    Console.WriteLine("Bye bye pov' type");
+                    Thread.Sleep(500);
+                    return;
                 }
             }
+        }
+
+        static int GetListingNumber(Type listing)
+        {
+            var displayName = GetListingName(listing);
+            var dotPosition = displayName.IndexOf(".");
+
+            return int.Parse(displayName.Substring(dotPosition + 1));
+        }
+
+        static string GetListingName(Type listing)
+        {
+            return listing.Name.Replace(typePrefix, string.Empty).Replace("_", ".");
         }
     }
 }

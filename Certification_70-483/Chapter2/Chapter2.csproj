@@ -47,6 +47,10 @@
     <Compile Include="Objective2_2\Listing_2_24.cs" />
     <Compile Include="Objective2_2\Listing_2_29.cs" />
     <Compile Include="Objective2_2\Listing_2_30.cs" />
+    <Compile Include="Objective2_5\Listing_2_61.cs" />
+    <Compile Include="Objective2_5\Listing_2_71.cs" />
+    <Compile Include="Objective2_5\Listing_2_74.cs" />
+    <Compile Include="Objective2_5\Listing_2_78.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -55,6 +59,7 @@
       <Name>Common</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

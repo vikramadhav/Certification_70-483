@@ -60,6 +60,10 @@
       <Project>{a1d048c3-5c2b-4a78-a465-44d7cf6211f8}</Project>
       <Name>Chapter2</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Chapter3\Chapter3.csproj">
+      <Project>{0e744e16-5347-4288-ad57-5b2525a09038}</Project>
+      <Name>Chapter3</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{1b34c5eb-728b-4ae4-aabe-b11192255923}</Project>
       <Name>Common</Name>

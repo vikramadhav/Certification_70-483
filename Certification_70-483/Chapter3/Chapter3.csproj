@@ -43,6 +43,10 @@
     <Compile Include="Objective1\Listing_3_10.cs" />
     <Compile Include="Objective1\Listing_3_16.cs" />
     <Compile Include="Objective1\Listing_3_6.cs" />
+    <Compile Include="Objective2\Listing_3_17.cs" />
+    <Compile Include="Objective2\Listing_3_18.cs" />
+    <Compile Include="Objective2\Listing_3_19.cs" />
+    <Compile Include="Objective2\Listing_3_20.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\person.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -88,9 +92,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Objective2\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
